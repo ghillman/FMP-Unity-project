@@ -17,9 +17,10 @@ public class WallSpawn : MonoBehaviour
     { 
         for(int i = 0; i < X; i++)
         {
-            for(int j = 0; Y > 0; j++)
+            for(int j = 0; i < Y; j++)
             {
                 Instantiate(myObject, new Vector2((XOffset - (X - i)), (Y + j) + YOffset), Quaternion.identity);
+               // break;
             }
         }
     }
